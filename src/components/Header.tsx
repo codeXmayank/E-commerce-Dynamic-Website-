@@ -105,17 +105,17 @@ export default function Header() {
                                         </Link>
                                     </div>
                                 )}
-                                
+
                                 <div className="p-2 relative z-10 bg-white rounded-b-sm">
                                     <Link href="/profile" className="block px-4 py-2 text-[14px] text-gray-700 hover:text-gray-900 hover:font-bold hover:bg-gray-50 rounded-sm transition-colors">Profile</Link>
                                     <Link href="/orders" className="block px-4 py-2 text-[14px] text-gray-700 hover:text-gray-900 hover:font-bold hover:bg-gray-50 rounded-sm transition-colors">Orders</Link>
                                     <Link href="/wishlist" className="block px-4 py-2 text-[14px] text-gray-700 hover:text-gray-900 hover:font-bold hover:bg-gray-50 rounded-sm transition-colors">Wishlist</Link>
                                     <Link href="/cart" className="block px-4 py-2 text-[14px] text-gray-700 hover:text-gray-900 hover:font-bold hover:bg-gray-50 rounded-sm transition-colors">Cart / Bag</Link>
-                                    
+
                                     {session && (
                                         <>
                                             <hr className="my-2 border-gray-100" />
-                                            <button 
+                                            <button
                                                 onClick={() => signOut({ callbackUrl: '/' })}
                                                 className="w-full text-left block px-4 py-2 text-[14px] text-gray-700 hover:text-[#ff3f6c] hover:font-bold hover:bg-red-50 rounded-sm transition-colors"
                                             >
@@ -126,12 +126,12 @@ export default function Header() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <Link href="/wishlist" className="flex flex-col items-center justify-center h-full border-b-[3px] border-transparent hover:border-[#ee5f73] pt-[2px] transition-colors group px-2">
                             <Heart className="h-5 w-5 text-gray-700 group-hover:text-gray-900" />
                             <span className="text-[12px] font-semibold mt-1 text-gray-700 group-hover:text-gray-900">Wishlist</span>
                         </Link>
-                        
+
                         <Link href="/cart" className="flex flex-col items-center justify-center h-full border-b-[3px] border-transparent flex-shrink-0 hover:border-[#ee5f73] pt-[2px] transition-colors group px-2">
                             <div className="relative">
                                 <ShoppingBag className="h-5 w-5 text-gray-700 group-hover:text-gray-900" />
